@@ -1,0 +1,119 @@
+$dark-blue: #002F51;
+$black-blue: #001F36;
+
+.weather--city__info {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather--identity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 100px;
+    color: $dark-blue;
+}
+
+.weather--identity__name{
+    font-size: 22px;
+}
+
+.weather--identity__time{
+    font-size: 18px;
+}
+
+.weather--current {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0px;
+}
+
+#weather--current__icon {
+    width: 175px;
+    margin: 0px 15px;
+    border-radius: 25px;
+    background: rgba($color: #025088, $alpha: 0.8);
+}
+
+.weather--current__info {
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $black-blue;
+    font-weight:500;
+}
+
+
+//TABLET------------------------------------------------
+@media (max-width: 1024px) { 
+
+    .weather--city__info{
+        height: 66vh;
+    }
+
+    .weather--identity__name {
+        font-size: 16px;
+    }
+
+    .identity--time__date {
+        font-size: 14px;
+    }
+
+    .weather--identity {
+        height: auto;
+        padding: 0px 25px;
+        margin-bottom: 25px;
+    }
+
+    .weather--current {
+        height: auto;
+        margin: 0px 25px;
+        margin-top: 25px;
+    }
+
+    #weather--current__icon {
+        width: 125px;
+    }
+
+}
+
+//SMART PHONE---------------------------------------------
+
+@media (max-width: 660px) { 
+
+    .weather--city__info{
+        height: 62vh;
+    }
+
+    .weather--identity__name {
+        font-size: 16px;
+    }
+
+    .identity--time__date {
+        font-size: 14px;
+    }
+
+    .weather--identity {
+        height: auto;
+        padding: 0px 25px;
+        margin-bottom: 25px;
+    }
+
+    .weather--current {
+        height: auto;
+        margin: 0px 25px;
+        margin-top: 25px;
+    }
+
+    #weather--current__icon {
+        width: 75px;
+    }
+
+}
